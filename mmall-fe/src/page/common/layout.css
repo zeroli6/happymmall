@@ -1,0 +1,89 @@
+/*
+* @Author: zeroli6
+* @Date:   2017-10-10 09:45:53
+* @Last Modified by:   zeroli6
+* @Last Modified time: 2017-10-12 17:11:25
+*/
+
+/*css reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f6f6f6;
+	font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+}
+li{
+	list-style: none;
+}
+img{
+	display: block;
+}
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	cursor: pointer;
+}
+
+/*定宽布局*/
+.w{
+	width: 1080px;
+	margin: 0 auto; 
+	/*容器里要是有需要定位的元素，就能以它进行相对定位了*/
+	position: relative;
+	overflow: hidden; /*效果：可以清除浮动*/
+}
+
+/*全局通用样式*/
+/*隐藏类*/
+.hide{
+	display: none;
+}
+/*超链样式*/
+.link{
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+	color: #c80012;
+}
+.link-text{
+	color: #999;
+	text-decoration: none;
+}
+/*btn*/
+.btn{
+	display: inline-block; /*ie上不生效*/
+	padding: 0 20px; /*针对ie设置display不生效问题*/
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle; /*防止其他样式冲突？*/
+	border: none;
+	background-color: #c60023;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-mini{
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	padding: 0 10px;
+}
+/*loading*/
+.loading{
+	margin: 10px auto;
+	display: block;
+	width: 65px;
+	height: 65px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: url(../../image/icon/loading.gif) no-repeat;
+	opacity: .6;
+}

@@ -2,10 +2,10 @@
 * @Author: zeroli6
 * @Date:   2017-09-18 20:12:18
 * @Last Modified by:   zeroli6
-* @Last Modified time: 2017-09-22 11:29:56
+* @Last Modified time: 2017-09-23 17:53:45
 */
 body{
 	background-color: #ccc;
-	/*background: url(../../image/exercise1.jpg);*/
+	background: url(../../image/exercise1.jpg);
 	color: red;
 }
