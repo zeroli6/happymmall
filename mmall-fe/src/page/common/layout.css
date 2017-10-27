@@ -2,7 +2,7 @@
 * @Author: zeroli6
 * @Date:   2017-10-10 09:45:53
 * @Last Modified by:   zeroli6
-* @Last Modified time: 2017-10-12 17:11:25
+* @Last Modified time: 2017-10-26 18:09:53
 */
 
 /*css reset*/
@@ -34,6 +34,25 @@ input[type='checkbox']{
 	/*容器里要是有需要定位的元素，就能以它进行相对定位了*/
 	position: relative;
 	overflow: hidden; /*效果：可以清除浮动*/
+}
+
+/*panel*/
+.panel{
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.panel .panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+	padding: 10px;
+	/*防止没有清除浮动*/
+	overflow: hidden;
 }
 
 /*全局通用样式*/

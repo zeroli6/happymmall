@@ -2,7 +2,7 @@
 * @Author: zeroli6
 * @Date:   2017-09-23 17:23:46
 * @Last Modified by:   zeroli6
-* @Last Modified time: 2017-09-27 15:04:02
+* @Last Modified time: 2017-10-23 15:40:36
 */
 
 var Hogan = require('hogan.js');
@@ -104,7 +104,7 @@ var _mm = {
 		//先是需要进入登录页
 		//因为从哪个页面跳进登录页，在登录完成后，就应该再返回哪个页面，所以需要添加参数
 		//参数就是页面的当前地址，但由于当前页面地址可能有特殊字符，会被截断，所以需要完全编码
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	goHome : function(){
 		window.location.href = './index.html';
